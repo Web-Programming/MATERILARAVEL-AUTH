@@ -14,5 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        \App\Models\Fakultas::create([
+            'nama' => 'Fakultas Ilmu Komputer dan Rekayasa', 'kode' => 'FIKR', 
+            'email' => 'fikr@mdp.ac.id', 'tgl_berdiri' => now(), 'alamat' => 'palembang'
+        ]);
     }
 }
